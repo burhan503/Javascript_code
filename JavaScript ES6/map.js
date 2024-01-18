@@ -1,3 +1,9 @@
+/* 
+The JavaScript ES6 has introduced two new data structures, i.e Map and WeakMap.
+Map is similar to objects in JavaScript that allows us to store elements in a key/value pair.
+The elements in a Map are inserted in an insertion order. However, unlike an object, a map can contain objects, functions and other data types as key.
+ */
+
 // access object element's 
 const map1 = new Map();
 map1.set('info',{name:'Burhan', age: 27});
