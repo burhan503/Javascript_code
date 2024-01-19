@@ -1,16 +1,25 @@
-/*Array Destructuring
-You can also perform array destructuring in a similar way. For example,
-*/
-const arrDes = ['Burhan', 'zeeshan', 'Rahil'];
+//Escape array element 
+const arrayOne = ['One','Two','Three'];
+const [x, ,y] = arrayOne; 
+console.log(x);
+console.log(y);
 
-// destructuring assignment in arrays
-const [x, y, z] = arrDes;
+// Assign Remaining Elements to a Single Variable
+const newArray = ['one','two','three,','for']
+const [xx, ...yy] = newArray;
+console.log(xx);
+console.log(yy)
 
-console.log(x); // one
-console.log(y); // two
-console.log(z); // three
-
-// Javascript Destructuring  
+// Access using Object 
+const newObject = {
+    Id_name: 'Burhan',
+    info: 'Class',
+    number : 'A11609'
+}
+const {Id_name,...clientAccess } = newObject;
+console.log(Id_name);
+console.log(clientAccess);
+// // Javascript Destructuring  
 const myobj = {
     id : 'A11609',
     name : 'Burhan',
@@ -19,21 +28,21 @@ const myobj = {
 const {id, name, email} = myobj;
 console.log(`THIS IS THE ID ${id} the is the name ${name} this is the email ${email}`);
 
-// with out Destructuring 
+// // with out Destructuring 
 const mynew = {
     name : 'testing Javascript',
     class_name: 'JavaScript Programming',
     track_id : 'Ajj!nnskn1234'
 }
-let name1 = mynew.name;
+let namee1 = mynew.name;
 let class_name2 = mynew.class_name;
 let track_id_remaning = mynew.track_id;
 
-console.log(name1);
+console.log(namee1);
 console.log(class_name2);
 console.log(track_id_remaning);
 
-//if you want to assign different variable names for the object key, you can use:
+// //if you want to assign different variable names for the object key, you can use:
 
 const object_info = {
     name: 'Hensex',
@@ -50,25 +59,7 @@ const Xampp = {
     user_id : 'A11609',
     class_room: 'B6XX1'
 }
-
-let {name1, age, gender} = person;
-console.log(name1); // undefined
-//If you want to assign different variable names for the object key, you can use:
 const {name:name1,user_id:user1,class_room:class_info} = Xampp;
 console.log(name1);
 console.log(user1);
 console.log(class_info);
-
-const person = {
-    name: 'Sara',
-    age: 25,
-    gender: 'female'    
-}
-
-// destructuring assignment
-// using different variable names
-let { name: name1, age: age1, gender:gender1 } = person;
-
-console.log(name1); // Sara
-console.log(age1); // 25
-console.log(gender1); // female
