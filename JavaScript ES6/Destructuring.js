@@ -1,3 +1,22 @@
+//You can also perform nested destructuring for object properties. For example,
+
+const person = {
+    name: 'Burhan',
+    info_classes: 'A Class',
+    age: 27,
+    emergency_no: 8233970503,
+    hobbys: {
+        free_time : 'watch Bigboss',
+        set_time: 'Namaz',
+        read_time: 'Read Quran'
+    }
+}
+const {name, hobbys:{read_time,set_time,free_time}} = person;
+console.log(name);
+console.log(read_time);
+console.log(free_time);
+console.log(set_time)
+
 //Escape array element 
 const arrayOne = ['One','Two','Three'];
 const [x, ,y] = arrayOne; 
