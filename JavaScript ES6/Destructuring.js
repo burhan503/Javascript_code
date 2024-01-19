@@ -38,7 +38,25 @@ const Xampp = {
     user_id : 'A11609',
     class_room: 'B6XX1'
 }
+
+let {name1, age, gender} = person;
+console.log(name1); // undefined
+//If you want to assign different variable names for the object key, you can use:
 const {name:name1,user_id:user1,class_room:class_info} = Xampp;
 console.log(name1);
 console.log(user1);
 console.log(class_info);
+
+const person = {
+    name: 'Sara',
+    age: 25,
+    gender: 'female'    
+}
+
+// destructuring assignment
+// using different variable names
+let { name: name1, age: age1, gender:gender1 } = person;
+
+console.log(name1); // Sara
+console.log(age1); // 25
+console.log(gender1); // female
