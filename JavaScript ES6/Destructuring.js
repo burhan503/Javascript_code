@@ -1,3 +1,15 @@
+/*Array Destructuring
+You can also perform array destructuring in a similar way. For example,
+*/
+const arrDes = ['Burhan', 'zeeshan', 'Rahil'];
+
+// destructuring assignment in arrays
+const [x, y, z] = arrDes;
+
+console.log(x); // one
+console.log(y); // two
+console.log(z); // three
+
 // Javascript Destructuring  
 const myobj = {
     id : 'A11609',
