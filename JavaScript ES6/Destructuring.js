@@ -32,3 +32,13 @@ const {name:client_info, class_name:name_id ,your_role:profile} = object_info;
 console.log(`name of branch ${client_info}`,"/n");
 console.log(`name of branch ${name_id}`,"/n");
 console.log(`name of branch ${profile}`,"/n");
+
+const Xampp = {
+    name: 'Burhan',
+    user_id : 'A11609',
+    class_room: 'B6XX1'
+}
+const {name:name1,user_id:user1,class_room:class_info} = Xampp;
+console.log(name1);
+console.log(user1);
+console.log(class_info);
