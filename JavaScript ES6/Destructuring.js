@@ -1,3 +1,27 @@
+function Destructure(){
+    const myarray = ['Burhan','Rahil','Hashim'];
+    const [x, y ,z] = myarray;
+    console.log(`this is ${x} this is y ${y} this is z ${z}`); 
+}
+function DestructureObject(){
+    let myObj = {
+        name: 'Burhan',
+        class_id: 'Real Class Testing',
+        mobile_no: 8233970503,
+        testing_mail: 'burhan@hesnex.com'
+    }
+   const name = myObj.name;
+   const user_id = myObj.class_id;
+   const mobile = myObj.mobile_no;
+   const mail = myObj.testing_mail;
+   console.log(name);
+   console.log(user_id);
+   console.log(mobile);
+   console.log(mail);
+}
+DestructureObject();
+
+
 //You can also perform nested destructuring for object properties. For example,
 
 const person = {
