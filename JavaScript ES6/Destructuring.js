@@ -1,3 +1,16 @@
+const numbers = [1, 2, 3, 4, 5];
+const [first, ...rest] = numbers;
+console.log(first, rest); // Output: 1 [2, 3, 4, 5]
+
+const numbers = [1, 2, 3, 4, 5];
+const [first, , third] = numbers;
+console.log(first, third); // Output: 1 3
+
+const person = { name: 'John', age: 30 };
+const { name: personName, age: personAge } = person;
+console.log(personName, personAge); // Output: John 30
+
+
 function Destructure(){
     const myarray = ['Burhan','Rahil','Hashim'];
     const [x, y ,z] = myarray;
