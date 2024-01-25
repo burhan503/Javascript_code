@@ -1,7 +1,5 @@
-// JavaScript Array methods with example 
-
-// 1 PUSH(): Add or more data or element to the end of an Array;
-let food = ['Pizza','Dosa','Dal','Palak'];
+// Remove the item from an Array 
+let food = ['Pizza','Butter Chicken','Tikka Masala.','Vindaloo'];
 console.log(food);
 food.push('Dal Bati');
 console.log(food);
@@ -9,3 +7,11 @@ console.log(food);
 food.pop();
 console.table(food);
 console.log('All Set');
+console.log(food);
+//Remove item from Array at index of 0 
+food.shift();
+console.table(food);
+// Add item From Array at index of 0 
+food.unshift('Dal Bati');
+console.table(food);
+console.log('All Set')
