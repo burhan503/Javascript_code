@@ -15,3 +15,6 @@ console.table(food);
 food.unshift('Dal Bati');
 console.table(food);
 console.log('All Set')
+// return a shallow copy of a ostion of an array 
+let food_info = food.slice(1, 3);
+console.log(food_info);
