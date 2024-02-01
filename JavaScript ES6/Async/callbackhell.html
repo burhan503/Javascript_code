@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>CallBack Hell</h1>
+    </body>
+    <script>
+       function getCheese(CallBack){
+        setTimeout(()=>{
+            const cheese = "🧀";
+            document.write(`I Purchase ${cheese} First`);
+            CallBack(cheese);
+        },1000)
+       }
+       function makedough(cheese,CallBack){
+        setTimeout(()=>{
+            const dough = cheese + '🥖🍞';
+            document.write(`I have also Purchase ${dough} Second`);
+            CallBack(dough)
+        },2000)
+       }
+       function bakePizza(dough,CallBack){
+        setTimeout(()=>{
+            const pizza = dough + '🍕🍕🍕';
+            document.write(`its to Hot ${pizza}`);
+            CallBack(pizza);
+        },3000)
+       }
+       getCheese((cheese)=>{
+        makedough(cheese,(dough)=>{
+            bakePizza(dough,(pizza)=>{
+                document.write(`Now Please How it is 🧀 🍞 🍕`);
+            })
+        })
+       })
+    </script>
+</html>
