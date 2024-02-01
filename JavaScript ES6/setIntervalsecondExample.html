@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // its count varible define ye apne aap VAR varible ho jaye ga 
+        count = 0;
+        // Yahan function Banaya hain Jisme setInterval diya taki timinfg interval chalta rahe 
+        let interval = setInterval(function() {
+                let name = "Burhan"; // Give a Varible Name 
+                let lastname = "Khan"
+                document.write('Hello' + ' ' + name + ' ' + ' ' + lastname); // Itrade Name
+                count += 1; // yahan value increment ho rahi hain count 1 se 
+                if (count === 3) { // yahan check kar raha hain kitne baar display karna hain 
+                    clearInterval(interval); // ye time ko stop karne ke liye hota hain isme varible KI id pass hoti hain
+                }
+            }, 1000) // Millisecond
+    </script>
+</body>
+
+</html>

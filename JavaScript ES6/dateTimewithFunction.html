@@ -11,6 +11,12 @@
 
 </body>
 <script>
+    function ShowTime() {
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        document.write(time);
+    }
+    setInterval(ShowTime, 200);
 </script>
 
 </html>
