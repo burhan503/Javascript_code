@@ -1,0 +1,9 @@
+div{
+    height: 280px;
+    width: 200px;
+    border: solid 2px black;
+    background-image: url(/box1.jpg);
+    background-size: cover;
+    position: fixed;
+    left: 0px;
+}
