@@ -8,7 +8,7 @@ const fruits = ['apple', 'banana'];
 fruits.push('orange', 'grape');
 // fruits is now ['apple', 'banana', 'orange', 'grape']
 //pop(): Removes the last element from an array and returns that element.
-
+// checking code 
 //javascript
 //Copy code
 const fruits = ['apple', 'banana', 'orange'];
